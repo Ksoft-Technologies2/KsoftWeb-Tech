@@ -1,0 +1,190 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background: #FFFFFF;
+    height: 15vh;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand img{
+    height: 14vh !important;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: -0.5rem;
+}
+.nav-link{
+    margin-top: -0.5rem !important;
+    margin-right: 2rem !important;
+    color: #000000 !important;
+    font-size: 16px !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold !important;
+}
+.nav-link:hover{
+    color: #3F3F89 !important;
+}
+.RequestBtn{
+    text-decoration: none;
+    background: linear-gradient(to right, #3F3F89,#9D395E) !important;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    margin-top: -0.6rem;
+}
+.RequestBtn:hover{
+    background: linear-gradient(to right, #9D395E,#3F3F89) !important;
+}
+.dropdown:hover .dropdown-menu { 
+    display: block; 
+}
+.dropdown-item{
+    padding: 0.5rem !important;
+    font-size: 15px !important;font-style: oblique;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.dropdown-item:hover{
+    background: none !important;
+    color: #9D395E !important;
+    font-size: 15px !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.toggle-icon{
+    display: none;
+}
+.slideshow-container {
+    position: relative;
+    background: #9D395E;
+    height: 100vh !important;
+  }
+.mySlides q{
+    display: flex;
+    justify-content: space-between;
+}
+.images img{
+    margin-top: -6rem;
+}
+.quotes h2{
+    color: #fff;
+}
+.quotes p{
+    color: #fff;
+}
+.quotes button{
+    color: #fff;
+    background: #3F3F89;
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin-left: -5rem !important;
+    transition: 0.3s;
+}
+.quotes button:hover{
+    background: #000000;
+    color: #fff;
+}
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #3F3F89;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+@media screen and (max-width: 600px) {
+    .navbar-brand img{
+        margin-left: -0.2rem !important;
+    }
+    .toggle-icon{
+        display: block;
+        margin-top: -0.6rem;
+        margin-right: 0.3rem;
+    }
+    .tog{
+        border: none !important;
+        outline: none !important;
+    }
+    .toggle-icon i{
+        font-size: 23px;
+        color: #9D395E;
+        cursor: pointer;
+    }
+    .offcanvas-body .navbar-nav .nav-link{
+        margin-bottom: 1rem !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .navbar-brand img{
+        margin-left: -0.2rem !important;
+    }
+    .toggle-icon{
+        display: block;
+        margin-top: -0.6rem;
+        margin-right: 1rem;
+    }
+    .toggle-icon i{
+        font-size: 25px;
+        color: #9D395E;
+        cursor: pointer;
+    }
+}
